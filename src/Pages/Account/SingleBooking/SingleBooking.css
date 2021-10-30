@@ -1,0 +1,35 @@
+.booked-agent {
+    width: 75%;
+    margin: auto;
+    padding: 30px 40px;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 5px;
+}
+
+.booked-agent img {
+    width: 150px;
+    height: 150px;
+}
+
+.booked-agent a {
+    text-decoration: none;
+}
+.booked-agent a:hover {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.booked-agent-contact i {
+    color: #6BC0E2;
+}
+
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .booked-agent {
+        width: 90%;
+    }
+}

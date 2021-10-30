@@ -1,0 +1,72 @@
+.btn-approve {
+    color: white;
+    background-color: rgb(10, 169, 68);
+}
+
+.manage-section .fa-check {
+    font-size: 0.9rem;
+}
+
+.btn-approve:hover {
+    color: rgb(26, 250, 108);
+    background: transparent;
+    border: 1px solid rgb(23, 236, 101);
+}
+
+
+
+.btn-update {
+    color: white;
+    background-color: rgb(199, 134, 13);
+}
+
+.btn-update:hover {
+    color: rgb(255, 174, 0);
+    background: transparent;
+    border: 1px solid rgb(255, 174, 0);
+}
+
+
+
+.btn-delete {
+    color: white;
+    background-color: rgb(211, 15, 25);
+}
+
+.btn-delete:hover {
+    color: rgb(255, 48, 48);
+    background: transparent;
+    border: 1px solid rgb(255, 48, 48);
+}
+
+.author-section p:nth-child(1) {
+    color: #b3b3b3;
+}
+.author-section p:nth-child(1) span {
+    color: #6BC0E2;
+}
+
+.author-section p:nth-child(2) {
+    color: #b3b3b3;
+}
+
+.pending {
+    color: rgb(255, 174, 0);
+    font-weight: 500;
+}
+
+.approved {
+    color: rgb(0, 255, 102);
+    font-weight: 500;
+}
+
+.fa-hourglass-half {
+    font-size: 0.9rem;
+}
+
+
+@media only screen and (max-width:688px) {
+    .btn-approve, .btn-delete, .btn-update {
+        margin: 10px 0px;
+    }
+}

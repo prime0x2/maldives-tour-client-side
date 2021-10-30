@@ -1,0 +1,27 @@
+.add-agent form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-agent form input , textarea {
+    width: 350px;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.add-agent form input[type=submit] {
+    width: auto;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgb(108, 115, 253);
+    border: 1px solid rgb(134, 0, 196);
+    border-radius: 5px;
+}
+
+.add-agent form input[type=submit]:hover {
+    background-color: rgb(20, 105, 251);
+}

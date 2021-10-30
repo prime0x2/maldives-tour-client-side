@@ -1,0 +1,83 @@
+.agent-details {
+    width: 75%;
+    margin: auto;
+    padding: 30px 40px;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 5px;
+}
+
+.agent-details img {
+    width: 150px;
+    height: 150px;
+}
+
+.agent-details a {
+    text-decoration: none;
+}
+.agent-details a:hover {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.text-detail {
+    color: rgb(179, 179, 179);
+}
+
+.agent-detail-contact i {
+    color: #6BC0E2;
+}
+
+.title-detail {
+    color: rgb(230, 150, 47);
+}
+
+
+.booking-form {
+    margin-top: 30px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form form input, input:focus {
+    color: grey;
+    background: transparent;
+    width: 350px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.booking-form form input:focus {
+    color: #fff;
+    border: 1px solid grey;
+    outline: 0;
+}
+
+.booking-form form input[type=submit] {
+    width: auto;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgb(108, 115, 253);
+    border: 1px solid rgb(134, 0, 196);
+    border-radius: 5px;
+}
+
+.booking-form form input[type=submit]:hover {
+    background-color: rgb(20, 105, 251);
+}
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .agent-details {
+        width: 90%;
+    }
+}

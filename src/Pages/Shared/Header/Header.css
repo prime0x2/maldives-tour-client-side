@@ -1,0 +1,75 @@
+.navbar {
+    background: #181A1B;
+    /* opacity: 0.6; */
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-brand h4, h6 {
+    color: rgb(255, 174, 0);
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.selected {
+    color: rgb(255, 174, 0) !important;
+    font-weight: 500;
+}
+
+.logged-in {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.user {
+    margin-right: 10px;
+    font-weight: bold;
+    color: rgb(69, 255, 121) !important;
+}
+
+.fa-circle {
+    font-size: 0.8rem;
+    color: rgb(31, 191, 45);
+}
+
+.btn-secondary {
+    color: rgb(171, 171, 171);
+    background-color: transparent;
+    border: 1px solid rgb(111, 111, 111);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    box-shadow: none;
+    background-color: transparent;
+    text-shadow: 0px 0px 7px rgb(255, 174, 0);
+    border: 1px solid rgb(182, 119, 0);
+}
+
+.btn-secondary:hover .fa-circle , .btn-secondary:focus .fa-circle {
+    text-shadow: none;
+    color: rgb(0, 255, 81);
+}
+
+.btn-logout {
+    font-size: 1.05rem;
+    color: rgb(255, 196, 0);
+    border: 0;
+    background: transparent;
+}
+
+.btn-regular {
+    color: #fff;
+    background: rgb(196, 141, 21);
+}
+
+.btn-regular:hover {
+    background: transparent;
+    color: white;
+    text-shadow: 0px 0px 5px rgb(255, 174, 0);
+    border: 1px solid rgb(255, 174, 0);
+}
