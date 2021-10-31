@@ -51,7 +51,7 @@ const MyBookings = () => {
             {
                 myBookings.map(booking => (
                     <SingleBooking key={booking._id} agent={booking.agent}>
-                        <div className="my-booking-manage d-flex justify-content-between align-items-center py-3">
+                        <div className="my-booking-manage d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center py-3">
                             <p>Status &nbsp;&nbsp;: &nbsp;&nbsp;
                                 {
                                     booking.status === 'Pending' ?
@@ -59,7 +59,9 @@ const MyBookings = () => {
                                         <span className="approved">{booking.status} &nbsp;<i className="fas fa-check"></i></span>
                                 }
                             </p>
-                            <button onClick={() => handleDelete(booking._id)} className="btn btn-delete px-lg-3"><i className="far fa-trash-alt"></i> &nbsp;Cancel Booking</button>
+                            <button onClick={() => handleDelete(booking._id)} className="btn btn-delete px-lg-3"><i className="far fa-trash-alt"></i> &nbsp;{
+                                booking.status === 'Pending' ? 'Cancel Booking' : 'Delete Booking'
+                            }</button>
                         </div>
                     </SingleBooking>
                 ))

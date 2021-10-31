@@ -56,7 +56,7 @@ const AgentDetails = () => {
     
     return (
         <div className="page px-lg-5">
-            <div className="agent-details mt-lg-5">
+            <div className="agent-details mt-3 mt-lg-5">
                 <div className="row align-items-center">
                     <div className="col col-md-2 text-center">
                         <img className="p-2 border border-secondary rounded" src={img} alt="" />
