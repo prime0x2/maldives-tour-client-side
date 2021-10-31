@@ -11,6 +11,7 @@ import AgentDetails from './Pages/Home/AgentDetails/AgentDetails';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
     return (
@@ -50,6 +51,10 @@ function App() {
                     
                     <Route path="/account">
                         <Account />
+                    </Route>
+                    
+                    <Route path="*">
+                        <NotFound />
                     </Route>
                 </Switch>
                 
