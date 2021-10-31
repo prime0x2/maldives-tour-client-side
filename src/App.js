@@ -9,6 +9,7 @@ import PrivateRoute from './Pages/Account/PrivateRoute/PrivateRoute';
 import AllAgents from './Pages/AllAgents/AllAgents';
 import AgentDetails from './Pages/Home/AgentDetails/AgentDetails';
 import Home from './Pages/Home/Home/Home';
+import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
 function App() {
@@ -51,6 +52,8 @@ function App() {
                         <Account />
                     </Route>
                 </Switch>
+                
+                <Footer />
             </BrowserRouter>
         </AuthProvider>
     );

@@ -8,7 +8,7 @@ const ManageAll = () => {
     const [status, setStatus] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://sheltered-beach-92728.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => {
                 setBookings(data);
@@ -21,7 +21,7 @@ const ManageAll = () => {
         const warning = window.confirm('Approve This Booking..!?');
         
         if (warning) {
-            fetch(`http://localhost:5000/booking/status/${id}`, { method: 'PUT' })
+            fetch(`https://sheltered-beach-92728.herokuapp.com/booking/status/${id}`, { method: 'PUT' })
                 .then(res => res.json())
                 .then(data => {
                     if (data.modifiedCount > 0) {
@@ -36,7 +36,7 @@ const ManageAll = () => {
         const warning = window.confirm('Are you sure\nYou want to delete this booking..!?');
 
         if (warning) {
-            fetch(`http://localhost:5000/booking/${id}`, { method: 'DELETE' })
+            fetch(`https://sheltered-beach-92728.herokuapp.com/booking/${id}`, { method: 'DELETE' })
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
@@ -51,7 +51,7 @@ const ManageAll = () => {
     return (
         <div className="page text-center">
             {
-                bookings[0] ? <h2 className="fw-bold mt-3">Manage All <span className="text-warning">Bookings </span>: {bookings.length}</h2> : <h2>No <span className="text-warning">Bookings</span> Yet</h2>
+                bookings[0] ? <h2 className="fw-bold mt-3">Manage All <span className="text-warning">Bookings </span>: {bookings.length}</h2> : <h2 className="fw-bold mt-3">No <span className="text-warning">Bookings</span> Yet</h2>
             }
 
             {

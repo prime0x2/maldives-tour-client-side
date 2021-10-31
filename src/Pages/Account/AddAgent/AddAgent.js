@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 import './AddAgent.css';
 
 const AddAgent = () => {
-    
+
     const { register, handleSubmit, reset } = useForm();
-    
+
     const onSubmit = (data) => {
-        axios.post('http://localhost:5000/agents', data)
+        axios.post('https://sheltered-beach-92728.herokuapp.com/agents', data)
             .then((res) => {
                 if (res.data.insertedId) {
                     alert('Agent Added Successfully...!');
@@ -16,19 +16,25 @@ const AddAgent = () => {
                 }
             });
     }
-    
+
     return (
         <div className="page add-agent text-center">
-            <h1>Add a New Travel Agent</h1>
-            
+            <h1 className="fw-bold mt-3">Add a <span className="text-warning">New</span> Travel <span className="text-warning">Agent</span></h1>
+
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("name")} placeholder="Name" />
-                <input {...register("email")} placeholder="Email" />
-                <input {...register("address")} placeholder="Address" />
-                <input type="number" {...register("phone")} placeholder="Phone" />
-                <input {...register("url")} placeholder="Website" />
-                <textarea {...register("description")} placeholder="Description" />
-                <input {...register("img")} placeholder="Agent Logo" />
+                <div>
+                    <input {...register("name")} placeholder="Name" />
+                    <input {...register("email")} placeholder="Email" />
+                </div>
+                <div>
+                    <input type="number" {...register("phone")} placeholder="Phone" />
+                    <input {...register("url")} placeholder="Website" />
+                </div>
+                <div>
+                    <input {...register("address")} placeholder="Address" /> <br />
+                    <textarea {...register("description")} placeholder="Description" /> <br />
+                    <input {...register("img")} placeholder="Agent Logo" />
+                </div>
                 <input type="submit" />
             </form>
         </div>

@@ -6,7 +6,7 @@ const useData = () => {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
-        fetch('http://localhost:5000/agents')
+        fetch('https://sheltered-beach-92728.herokuapp.com/agents')
             .then(res => res.json())
             .then(data => {
                 setAgents(data);

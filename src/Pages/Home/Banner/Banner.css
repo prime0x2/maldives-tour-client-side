@@ -8,7 +8,7 @@
 .banner-title {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 10px  rgb(255, 174, 0);
-    padding-top: 300px;
+    padding-top: 250px;
     font-size: 3.5rem;
     font-weight: bold;
 }
@@ -27,4 +27,16 @@
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 4px 0px rgb(255, 174, 0);
     text-shadow: 0px 0px 8px rgb(255, 174, 0);
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .home-banner {
+        padding: 0px 20px;
+    }
+    .banner-title {
+        padding-top: 250px;
+        font-size: 3rem;
+    }
 }

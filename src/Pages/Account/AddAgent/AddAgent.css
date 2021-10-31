@@ -6,22 +6,37 @@
 }
 
 .add-agent form input , textarea {
-    width: 350px;
+    color: #fff;
+    width: 300px;
     margin: 10px;
     padding: 5px 20px;
     border-radius: 5px;
+    background: rgb(37, 37, 37);
     border: 1px solid grey;
+}
+
+.add-agent form input:focus {
+    color: #fff;
+    width: 300px;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: rgb(37, 37, 37);
+    border: 1px solid grey;
+    outline: 0;
 }
 
 .add-agent form input[type=submit] {
     width: auto;
     color: #fff;
     padding: 5px 15px;
-    background-color: rgb(108, 115, 253);
-    border: 1px solid rgb(134, 0, 196);
+    background-color: rgb(223, 152, 0);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
 }
 
 .add-agent form input[type=submit]:hover {
-    background-color: rgb(20, 105, 251);
+    background: transparent;
+    border: 1px solid rgb(255, 174, 0);
+    text-shadow: 0px 0px 5px rgb(255, 174, 0);
 }

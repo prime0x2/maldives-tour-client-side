@@ -23,7 +23,7 @@ const Agents = () => {
     return (
         <div className="home-agents text-center py-5 px-lg-5">
             <div className="container">
-                <h2 className="fw-bold m-0">BEST <span className="text-warning">TRAVEL</span> AGENTS</h2>
+                <h2 className="fw-bold m-0"><span className="px-3 py-2 border-bottom border-3 border-warning">BEST <span className="text-warning">TRAVEL</span> AGENTS</span></h2>
 
                 <div className="row row-cols-1 row-cols-md-3 g-4 g-lg-5 py-5">
                     {

@@ -1,0 +1,16 @@
+.home-stay {
+    width: 80%;
+}
+
+.single-stay {
+    border-radius: 10px;
+    letter-spacing: 1.4px;
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
+}
+
+.single-stay .btn-explore {
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 228, 74);
+}

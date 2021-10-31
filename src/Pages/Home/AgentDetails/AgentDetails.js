@@ -18,7 +18,7 @@ const AgentDetails = () => {
     
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/agents/${agentID}`)
+        fetch(`https://sheltered-beach-92728.herokuapp.com/agents/${agentID}`)
             .then(res => res.json())
             .then(data => {
                 setAgent(data);
@@ -44,7 +44,7 @@ const AgentDetails = () => {
         data.author = user.email;
         data.status = 'Pending';
         
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://sheltered-beach-92728.herokuapp.com/booking', data)
             .then((res) => {
                 if (res.data?.insertedId) {
                     alert('Booking Pending...!');
