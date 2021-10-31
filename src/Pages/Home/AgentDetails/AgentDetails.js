@@ -41,7 +41,6 @@ const AgentDetails = () => {
     
     const onSubmit = (data) => {
         data.agent = agent;
-        data.author = user.email;
         data.status = 'Pending';
         
         axios.post('https://sheltered-beach-92728.herokuapp.com/booking', data)
@@ -82,7 +81,8 @@ const AgentDetails = () => {
             
             <div className="booking-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("name")} placeholder="Name" />
+                    <input {...register("name")} placeholder="Name" defaultValue={user.displayName} />
+                    <input {...register("author")} placeholder="Email" defaultValue={user.email} />
                     <input {...register("address")} placeholder="Address" />
                     <input type="number" {...register("phone")} placeholder="Phone" />
                     <input type="submit" />
