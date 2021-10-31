@@ -29,7 +29,9 @@ const Agents = () => {
                     {
                         location.pathname !== "/allAgents" ?
                             (
-                                agents.slice(0, 6).map(agent => (
+                                agents.length > 9 ? (agents.slice(0, 9).map(agent => (
+                                    <Agent key={agent._id} agent={agent} />
+                                ))) : agents.map(agent => (
                                     <Agent key={agent._id} agent={agent} />
                                 ))
                             ) : (
@@ -41,7 +43,7 @@ const Agents = () => {
                 </div>
 
                 {
-                    location.pathname !== "/allAgents" && <Link to="/allAgents"><button className="btn btn-regular">Check More</button></Link>
+                    ((location.pathname !== "/allAgents") && (agents.length > 9)) && <Link to="/allAgents"><button className="btn btn-regular">Check More</button></Link>
                 }
             </div>
         </div>
